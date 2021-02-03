@@ -1,0 +1,18 @@
+package my_captian;
+
+
+import java.util.Scanner;
+public class Test_Data {
+    public static void main(String[] args){
+        double miy = 60*24*365;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Input the number of minutes:");
+        int t = s.nextInt();
+        long year = (long)(t/miy);
+        int day = (int)(t/60/24)%365;
+        System.out.println(t+"minutes is approximately "+ year + "years and " + day+ "days ." );
+        
+        
+    }
+    
+}
